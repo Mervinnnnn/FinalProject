@@ -13,7 +13,7 @@ import { initSocket } from "./socket/chatSocket.js"
 const app = express()
 const httpServer = createServer(app)
 const io = new Server(httpServer)
-const port = 3001
+const port = process.env.PORT
 
 
 
