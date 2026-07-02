@@ -1,4 +1,4 @@
-import User from "../models/UserModel.js";
+import User from "../Models/UserModel.js";
 
 export const registerPage = (req,res) =>{
     if(req.session.user){
