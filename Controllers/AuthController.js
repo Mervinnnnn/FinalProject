@@ -13,6 +13,7 @@ export const registerPage = (req,res) =>{
 
 export const registerUser = async(req,res)=>{
     const {username, email, password} = req.body
+    console.log(User)
     //cek username pernah terdaftar
     const existingUser = await User.findOne({
         $or:[{email}, {username}]
