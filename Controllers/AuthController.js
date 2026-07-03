@@ -1,4 +1,4 @@
-import User from "../Models/UserModel.js";
+import User from "../models/UserModel.js";
 
 export const registerPage = (req,res) =>{
     if(req.session.user){
@@ -13,7 +13,6 @@ export const registerPage = (req,res) =>{
 
 export const registerUser = async(req,res)=>{
     const {username, email, password} = req.body
-    console.log(User)
     //cek username pernah terdaftar
     const existingUser = await User.findOne({
         $or:[{email}, {username}]

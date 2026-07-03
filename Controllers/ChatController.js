@@ -1,5 +1,5 @@
-import User from "../Models/UserModel.js"
-import Message from '../Models/MessageModel.js'
+import User from "../models/UserModel.js"
+import Message from '../models/MessageModel.js'
 
 export const chatPage = async(req,res)=>{
     const currentRoom = req.query.room || 'general'

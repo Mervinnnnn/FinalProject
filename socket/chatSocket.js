@@ -1,5 +1,5 @@
-import Message from '../Models/MessageModel.js'
-import User from '../Models/UserModel.js'
+import Message from '../models/MessageModel.js'
+import User from '../models/UserModel.js'
 import session from 'express-session'
 
 const onlineUser = {}
