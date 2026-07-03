@@ -3,7 +3,7 @@ import User from '../models/UserModel.js'
 import session from 'express-session'
 
 const onlineUser = {}
-
+// push
 export const initSocket = (io)=>{
     io.on('connection', async(socket)=>{
         const sessionUser = socket.request.session?.user
