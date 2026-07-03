@@ -8,7 +8,7 @@ router.get("/register", registerPage)
 router.get("/login", loginPage)
 router.post('/login', loginUser)
 router.post('/register', registerUser)
-router.get('/logout', logOutUser)
+router.post('/logout', logOutUser)
 
 
 export default router
