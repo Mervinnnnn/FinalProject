@@ -21,7 +21,7 @@
 
         <!-- ROOMS -->
         <div class="p-3 border-bottom" style="border-color:#0f3460 !important;">
-            <div class="text-muted small text-uppercase fw-bold mb-2">💬 Rooms</div>
+            <div class="text-white small text-uppercase fw-bold mb-2">💬 Rooms</div>
             <a href="/chat?room=general" class="d-flex align-items-center gap-2 p-2 rounded text-decoration-none mb-1
                 {{#if (isActive currentRoom 'general')}}active-room{{/if}}"
                 style="color:#c0c0d0; background: {{#if (isActive currentRoom 'general')}}#0f3460{{/if}}">
@@ -39,12 +39,12 @@
 
         <!-- ONLINE USERS -->
         <div class="p-3">
-            <div class="text-muted small text-uppercase fw-bold mb-2">👥 Users Online</div>
+            <div class="text-white small text-uppercase fw-bold mb-2">👥 Users Online</div>
             <!-- Diisi dinamis oleh socket event 'online-users' -->
             <div id="online-users-list"></div>
 
             <hr style="border-color:#0f3460;">
-            <div class="text-muted small text-uppercase fw-bold mb-2">👤 Semua User</div>
+            <div class="text-white small text-uppercase fw-bold mb-2">👤 Semua User</div>
             {{#each users}}
             <a href="/chat/dm/{{ this._id }}" class="d-flex align-items-center gap-2 p-2 rounded text-decoration-none mb-1"
                 style="color:#c0c0d0;">
